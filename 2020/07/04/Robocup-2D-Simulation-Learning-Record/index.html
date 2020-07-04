@@ -43,7 +43,7 @@
 <meta property="og:image" content="http://yoursite.com/2020/07/04/Robocup-2D-Simulation-Learning-Record/Tools%EF%BC%883%EF%BC%89.png">
 <meta property="og:image" content="http://yoursite.com/2020/07/04/Robocup-2D-Simulation-Learning-Record/Tools%EF%BC%884%EF%BC%89.png">
 <meta property="article:published_time" content="2020-07-04T05:09:20.000Z">
-<meta property="article:modified_time" content="2020-07-04T14:55:50.293Z">
+<meta property="article:modified_time" content="2020-07-04T16:09:38.031Z">
 <meta property="article:author" content="Jacob953">
 <meta property="article:tag" content="Learning">
 <meta name="twitter:card" content="summary">
@@ -189,10 +189,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-07-04 13:09:20 / Modified: 22:55:50" itemprop="dateCreated datePublished" datetime="2020-07-04T13:09:20+08:00">2020-07-04</time>
+              <time title="Created: 2020-07-04 13:09:20" itemprop="dateCreated datePublished" datetime="2020-07-04T13:09:20+08:00">2020-07-04</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-07-05 00:09:38" itemprop="dateModified" datetime="2020-07-05T00:09:38+08:00">2020-07-05</time>
+              </span>
 
           
 
@@ -247,7 +253,7 @@
 <p><img src="/2020/07/04/Robocup-2D-Simulation-Learning-Record/Install%EF%BC%881%EF%BC%89.png" alt="Install（1）"></p>
 <p>​        <strong>4.选择地区（目前没看出来有什么区别）</strong></p>
 <p><img src="/2020/07/04/Robocup-2D-Simulation-Learning-Record/Install%EF%BC%882%EF%BC%89.png" alt="Install（2）"></p>
-<p>​        <strong>Who are you？（设置管理员的相关信息）</strong></p>
+<p>​        <strong>5.Who are you？（设置管理员的相关信息）</strong></p>
 <p><img src="/2020/07/04/Robocup-2D-Simulation-Learning-Record/Install%EF%BC%883%EF%BC%89.png" alt="Install（3）"></p>
 <h2 id="配置robocup-2D-simulation环境"><a href="#配置robocup-2D-simulation环境" class="headerlink" title="配置robocup 2D simulation环境"></a>配置robocup 2D simulation环境</h2><p><em>注意事项：</em></p>
 <p>​        <em>1.start.sh实际上就是几个包的安装操作（如果没有的同学请自取）</em></p>
@@ -255,7 +261,7 @@
 
 <p>​        <em>2.想要将Windows直接导入VMware需要安装VMwareTools(或者不移除USB接口，采用USB导入，这样可能会导致文件损失)</em></p>
 <p>​        <em>3.很多教程是以Ubuntu 12.为基础的（如上的start.sh便是），部分操作无法正常进行，我将会一一指正</em></p>
-<p>​        <em>4.Ubuntu中输入密码时，光标是不会移动的，只管输就行（Ubuntu想要保护用户安全）</em></p>
+<p>​        <em>4.Ubuntu在终端输入密码时，光标是不会移动的，只管输就行（Ubuntu想要保护用户安全）</em></p>
 <p>​        <em>5.在安装过程中，碰到<code>[Y/n]</code>则输入<code>Y</code>，其余情况全按照<code>[...]</code>里面的输入</em></p>
 <h3 id="安装VMware-Tools"><a href="#安装VMware-Tools" class="headerlink" title="安装VMware Tools"></a>安装VMware Tools</h3><p>​        <strong>1.安装VMware Tools（我装过了，就变成了“重新安装”，找不到的小白可以去管理看看）</strong></p>
 <p><img src="/2020/07/04/Robocup-2D-Simulation-Learning-Record/Tools%EF%BC%881%EF%BC%89.png" alt="Tools（1）"></p>
@@ -276,12 +282,13 @@
 <p>​        <strong>1.启动start.sh文件，按照如下输入：</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1 Ctrl+Alt+T(快捷键打开系统终端)</span><br><span class="line">2 chmod 777 .&#x2F;start.sh</span><br><span class="line">3 .&#x2F;start.sh</span><br></pre></td></tr></table></figure>
 
-<p>​        *<em>2.覆盖 QtCore Library（具体操作如下） *</em></p>
+<p>​        <strong>2.覆盖 QtCore Library（具体操作如下）</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">1 Ctrl+Alt+T</span><br><span class="line">2 sudo apt-get install libqt4-*(下载并覆盖QtCore 4.的所有包)</span><br><span class="line">3 输入密码和一堆无脑操作</span><br><span class="line">&#x2F;&#x2F;在文件中无法正常访问libqt4的任何包，只有在系统终端中才能安装</span><br><span class="line">&#x2F;&#x2F;这一点是我再打开start.sh时发现的</span><br><span class="line">&#x2F;&#x2F;打开start.sh，其实大家会发现里面全是包的安装和确认安装的过程</span><br><span class="line">&#x2F;&#x2F;里面就有libqt4-dev</span><br><span class="line">&#x2F;&#x2F;因此，我们可以将start.sh简化，直接变成libqt4-*</span><br><span class="line">&#x2F;&#x2F;随着时间的推移，可能还会有出现5.的问题，所以我们可以直接libqt5-*</span><br></pre></td></tr></table></figure>
 
 <p>​        <strong>3.一系列相同的操作，但要注意顺序</strong></p>
 <p>​        <em>顺序 bison-3.0 &gt;&gt; rcssserver &gt;&gt; rcsslogplayer &gt;&gt; rcssmonitor（下面我会用file来代替相应的文件名，不断重复即可）</em></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">1 将file解压到home，并进入file</span><br><span class="line">2 右键空白处打开终端(千万别直接快捷键，否则需要cd 文件夹名，很麻烦)</span><br><span class="line">3 .&#x2F;configure	</span><br><span class="line">&#x2F;&#x2F;生成makefile文件</span><br><span class="line">4 make				</span><br><span class="line">&#x2F;&#x2F;编译</span><br><span class="line">5 sudo make install</span><br><span class="line">&#x2F;&#x2F;安装	</span><br><span class="line">6 sudo ldconfig</span><br><span class="line">&#x2F;&#x2F;类似于编译</span><br></pre></td></tr></table></figure>
+<p>​        <em>一定是rcssmonitor在最后，因为rcsslogplayer中有部分QtCore4的包（虽然网上有些博主说的不需要解压这个包，但我亲测还是需要的），这也是老教程中存在的问题</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">1 将file解压到home，并进入file</span><br><span class="line">2 右键空白处打开终端(千万别直接快捷键，否则需要cd 文件夹名，很麻烦)</span><br><span class="line">3 .&#x2F;configure	</span><br><span class="line">&#x2F;&#x2F;这里不需要.&#x2F;configure --with-boost-libdir&#x3D;&#x2F;usr&#x2F;lib&#x2F;x86_64-linux-gnu</span><br><span class="line">&#x2F;&#x2F;除非他报错找不到对应的文件（我也是写背的了才发现的）</span><br><span class="line">&#x2F;&#x2F;生成makefile文件</span><br><span class="line">4 make				</span><br><span class="line">&#x2F;&#x2F;编译</span><br><span class="line">5 sudo make install</span><br><span class="line">&#x2F;&#x2F;安装	</span><br><span class="line">6 sudo ldconfig</span><br><span class="line">&#x2F;&#x2F;类似于编译</span><br></pre></td></tr></table></figure>
 
 <p>​        <strong>4.验证环境是否配置成功</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1 Ctrl+Alt+T</span><br><span class="line">2 rcsoccersim</span><br><span class="line">&#x2F;&#x2F;出现界面即配置成功</span><br></pre></td></tr></table></figure>
@@ -303,6 +310,13 @@
 
 
         
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2020/07/05/Visual-Studio-Code-for-C/" rel="next" title="Visual Studio Code for C++">
+      Visual Studio Code for C++ <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
       </footer>
     
   </article>
@@ -374,7 +388,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
