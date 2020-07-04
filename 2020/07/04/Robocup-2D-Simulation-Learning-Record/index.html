@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="2020.6.30    我和四个小伙伴一起参加了robocup 这篇博客是将会记录我们一起参赛的所有经历和经验">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Robocup 2D Simulation Learning Record">
+<meta property="og:url" content="http://yoursite.com/2020/07/04/Robocup-2D-Simulation-Learning-Record/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="2020.6.30    我和四个小伙伴一起参加了robocup 这篇博客是将会记录我们一起参赛的所有经历和经验">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CVMware%EF%BC%881%EF%BC%89.png%22%E6%96%B0%E5%BB%BA%E8%99%9A%E6%8B%9F%E6%9C%BA%22">
+<meta property="og:image" content="http://yoursite.com/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CVMware%EF%BC%882%EF%BC%89.png">
+<meta property="og:image" content="http://yoursite.com/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CVMware%EF%BC%883%EF%BC%89.png">
+<meta property="og:image" content="http://yoursite.com/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CVMware%EF%BC%884%EF%BC%89.png">
+<meta property="og:image" content="http://yoursite.com/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CVMware%EF%BC%885%EF%BC%89.png">
+<meta property="og:image" content="http://yoursite.com/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CVMware%EF%BC%886%EF%BC%89.png">
+<meta property="og:image" content="http://yoursite.com/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CVM+Ubuntu%EF%BC%881%EF%BC%89.png">
+<meta property="og:image" content="http://yoursite.com/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CVM+Ubuntu%EF%BC%882%EF%BC%89.png">
+<meta property="og:image" content="http://yoursite.com/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CInstall%EF%BC%881%EF%BC%89.png">
+<meta property="og:image" content="http://yoursite.com/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CInstall%EF%BC%882%EF%BC%89.png">
+<meta property="og:image" content="http://yoursite.com/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CInstall%EF%BC%883%EF%BC%89.png">
+<meta property="og:image" content="http://yoursite.com/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CTools%EF%BC%881%EF%BC%89.png">
+<meta property="og:image" content="http://yoursite.com/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CTools%EF%BC%882%EF%BC%89.png">
+<meta property="og:image" content="http://yoursite.com/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CTools%EF%BC%883%EF%BC%89.png">
+<meta property="og:image" content="http://yoursite.com/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CTools%EF%BC%884%EF%BC%89.png">
+<meta property="article:published_time" content="2020-07-04T05:09:20.000Z">
+<meta property="article:modified_time" content="2020-07-04T14:08:28.661Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Learning">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CVMware%EF%BC%881%EF%BC%89.png%22%E6%96%B0%E5%BB%BA%E8%99%9A%E6%8B%9F%E6%9C%BA%22">
+
+<link rel="canonical" href="http://yoursite.com/2020/07/04/Robocup-2D-Simulation-Learning-Record/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>Robocup 2D Simulation Learning Record | Hexo</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Hexo</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/04/Robocup-2D-Simulation-Learning-Record/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Robocup 2D Simulation Learning Record
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-07-04 13:09:20 / Modified: 22:08:28" itemprop="dateCreated datePublished" datetime="2020-07-04T13:09:20+08:00">2020-07-04</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><em>2020.6.30    我和四个小伙伴一起参加了robocup</em></p>
+<p><em>这篇博客是将会记录我们一起参赛的所有经历和经验</em></p>
+<a id="more"></a>
+
+<h1 id="Windows下Ubuntu和robocup-2D-simulation环境配置"><a href="#Windows下Ubuntu和robocup-2D-simulation环境配置" class="headerlink" title="Windows下Ubuntu和robocup 2D simulation环境配置"></a>Windows下Ubuntu和robocup 2D simulation环境配置</h1><p><em>前提条件</em></p>
+<p><em>虚拟机： VMware Workstation 15Pro</em></p>
+<p><em>镜像： Ubuntu 16.04.6</em></p>
+<p><em>包： 1.bison-3.0.tar.gz</em></p>
+<p>​         <em>2.rcssserver-15.4.0.tar.gz</em></p>
+<p>​         <em>3.rcsslogplayer-15.2.1.tar.gz</em></p>
+<p>​         <em>4.rcssmonitot-15.2.1.tar.gz</em></p>
+<p><em>文件： start.sh</em></p>
+<h2 id="添加Ubuntu镜像到虚拟机"><a href="#添加Ubuntu镜像到虚拟机" class="headerlink" title="添加Ubuntu镜像到虚拟机"></a>添加Ubuntu镜像到虚拟机</h2><h3 id="Ubuntu-16-04-6"><a href="#Ubuntu-16-04-6" class="headerlink" title="Ubuntu 16.04.6"></a>Ubuntu 16.04.6</h3><p>​        Ubuntu是Linux操作系统中的一个子系统，随着版本的不断更新，Ubuntu的性能也在不断变好，因此，每个版本Ubuntu的操作都会有或多或少的变化，但是采用终端操作这点是绝不会改变的，我们现在说说配置环境可能会用到的几个有关终端的规则：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">sudo</span><br><span class="line">&#x2F;&#x2F;在配置环境会有很多这个开头，其实就是super-user do的意思</span><br><span class="line">apt-get</span><br><span class="line">&#x2F;&#x2F;Ubuntu的包管理工具，用来安装、更新和卸载包的</span><br><span class="line">install</span><br><span class="line">&#x2F;&#x2F;下载（字面意思）</span><br><span class="line">chmod</span><br><span class="line">&#x2F;&#x2F;控制文件调用</span><br><span class="line">cd</span><br><span class="line">&#x2F;&#x2F;打开文件夹</span><br><span class="line">.&#x2F;+filename</span><br><span class="line">&#x2F;&#x2F;启动文件</span><br></pre></td></tr></table></figure>
+
+<p>​        我们还需要注意的是，命令之后得有空格隔开</p>
+<h3 id="VMware导入操作"><a href="#VMware导入操作" class="headerlink" title="VMware导入操作"></a>VMware导入操作</h3><p>​        实际上，VMware作为目前来说特别优秀的虚拟机，其实与Ubuntu是有点格格不入的，他们之间的兼容性主要看使用者的脸（比如我就是老非酋了），因此我们采用比较稳定的方式来导入Ubuntu镜像：</p>
+<p><em>以下是部分截图，没有截图的部分是根据自身需求而定的（小白同学无脑下一步就行）</em></p>
+<p>​        <strong>1.新建虚拟机</strong></p>
+<p><img src="/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CVMware%EF%BC%881%EF%BC%89.png%22%E6%96%B0%E5%BB%BA%E8%99%9A%E6%8B%9F%E6%9C%BA%22" alt="VMware（1）"></p>
+<p>​        <strong>2.自定义</strong></p>
+<p><img src="/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CVMware%EF%BC%882%EF%BC%89.png" alt="VMware（2）"></p>
+<p>​        <strong>3.稍后安装操作系统（记住，这一步一定要勾选，否则会出大问题）</strong></p>
+<p><img src="/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CVMware%EF%BC%883%EF%BC%89.png" alt="VMware（3）"></p>
+<p>​        <strong>4.Libux系统</strong></p>
+<p><img src="/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CVMware%EF%BC%884%EF%BC%89.png" alt="VMware（4）"></p>
+<p>​        <strong>5.选择虚拟机的位置</strong></p>
+<p><img src="/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CVMware%EF%BC%885%EF%BC%89.png" alt="VMware（5）"></p>
+<p>​        <strong>6.选择网络类型</strong></p>
+<p><img src="/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CVMware%EF%BC%886%EF%BC%89.png" alt="VMware（6）"></p>
+<p>​        这样我们就得到一个空的并且以Linux为操作系统的虚拟机了。</p>
+<h3 id="导入并安装Ubuntu"><a href="#导入并安装Ubuntu" class="headerlink" title="导入并安装Ubuntu"></a>导入并安装Ubuntu</h3><p>​        <strong>1.编辑虚拟机（移除无关硬件，导入镜像）</strong></p>
+<p><img src="/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CVM+Ubuntu%EF%BC%881%EF%BC%89.png" alt="VM+Ubuntu（1）"></p>
+<p>​        <strong>2.检查网络适配器的设置是否正常</strong></p>
+<p><img src="/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CVM+Ubuntu%EF%BC%882%EF%BC%89.png" alt="VM+Ubuntu（2）"></p>
+<p>​        完成之后变可以打开虚拟机了。</p>
+<p>​        <strong><em>在安装Ubuntu的过程中，有个很重要的操作就是断网安装（安装过程会消耗一定的时间，如果断网可能就十来分钟，否则我不敢保证你会安装多久）</em></strong></p>
+<p>​        <em>虚拟机界面很像不要奇怪，成功安装后可以改变虚拟机的界面，一般是1920*1200</em></p>
+<p>​        <strong>3.Install Ubuntu（接着就是无脑下一步了）</strong></p>
+<p><img src="/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CInstall%EF%BC%881%EF%BC%89.png" alt="Install（1）"></p>
+<p>​        <strong>4.选择地区（目前没看出来有什么区别）</strong></p>
+<p><img src="/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CInstall%EF%BC%882%EF%BC%89.png" alt="Install（2）"></p>
+<p>​        <strong>Who are you？（设置管理员的相关信息）</strong></p>
+<p><img src="/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CInstall%EF%BC%883%EF%BC%89.png" alt="Install（3）"></p>
+<h2 id="配置robocup-2D-simulation环境"><a href="#配置robocup-2D-simulation环境" class="headerlink" title="配置robocup 2D simulation环境"></a>配置robocup 2D simulation环境</h2><p><em>注意事项：</em></p>
+<p>​        <em>1.start.sh实际上就是几个包的安装操作（如果没有的同学请自取）</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">y</span><br><span class="line">sudo apt-get install nautilus-open-terminal </span><br><span class="line">y</span><br><span class="line">sudo apt-get install build-essential </span><br><span class="line">y</span><br><span class="line">sudo apt-get install xorg-dev  </span><br><span class="line">y</span><br><span class="line">sudo apt-get install flex bison </span><br><span class="line">y</span><br><span class="line">sudo apt-get install libboost-dev libboost-all-dev</span><br><span class="line">y</span><br><span class="line">sudo apt-get install libqt4-dev libqt4-gui qt4-dev-tools qt4-doc qt4-designer qt4-qtconfig </span><br><span class="line">y</span><br><span class="line">sudo apt-get install libpng12-dev</span><br><span class="line">y</span><br><span class="line">sudo apt-get install libglib2.0-dev </span><br><span class="line">y</span><br><span class="line">sudo apt-get install libaudio-dev</span><br><span class="line">y</span><br><span class="line">sudo apt-get install libxt-dev libsm-dev</span><br><span class="line">y</span><br><span class="line">sudo apt-get install libxi-dev</span><br><span class="line">y</span><br><span class="line">sudo apt-get install libxrender-dev</span><br><span class="line">y</span><br><span class="line">sudo apt-get install libfreetype6-dev</span><br><span class="line">y</span><br><span class="line">sudo apt-get install libfontconfig1-dev</span><br><span class="line">y</span><br><span class="line">sudo apt-get install tcsh</span><br><span class="line">y</span><br></pre></td></tr></table></figure>
+
+<p>​        <em>2.想要将Windows直接导入VMware需要安装VMwareTools(或者不移除USB接口，采用USB导入，这样可能会导致文件损失)</em></p>
+<p>​        <em>3.很多教程是以Ubuntu 12.为基础的（如上的start.sh便是），部分操作无法正常进行，我将会一一指正</em></p>
+<p>​        <em>4.Ubuntu中输入密码时，光标是不会移动的，只管输就行（Ubuntu想要保护用户安全）</em></p>
+<p>​        <em>5.在安装过程中，碰到<code>[Y/n]</code>则输入<code>Y</code>，其余情况全按照<code>[...]</code>里面的输入</em></p>
+<h3 id="安装VMware-Tools"><a href="#安装VMware-Tools" class="headerlink" title="安装VMware Tools"></a>安装VMware Tools</h3><p>​        <strong>1.安装VMware Tools（我装过了，就变成了“重新安装”，找不到的小白可以去管理看看）</strong></p>
+<p><img src="/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CTools%EF%BC%881%EF%BC%89.png" alt="Tools（1）"></p>
+<p>​        <strong>2.将VMware Tools压缩包移动到桌面，并退出USB</strong></p>
+<p><img src="/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CTools%EF%BC%882%EF%BC%89.png" alt="Tools（2）"></p>
+<p>​        <strong>3.解压并打开文件夹（其实第二步可以直接解压到桌面，我当时nt了）</strong></p>
+<p>​        <em>一定要解压到桌面，否则无法正常调用VMware Tools</em></p>
+<p><img src="/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CTools%EF%BC%883%EF%BC%89.png" alt="Tools（3）"></p>
+<p>​        <strong>4.右键空白的地方&gt;&gt;打开终端（一定在文件内打开，否则会很麻烦）</strong></p>
+<p><img src="/.com//E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CRobocup-2D-Simulation-Learning-Record%5CTools%EF%BC%884%EF%BC%89.png" alt="Tools（4）"></p>
+<p>​        <strong>5.然后按照以下顺序输入</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo .&#x2F;vmware-install.pl</span><br><span class="line">&#x2F;&#x2F;接着就是输入密码和一堆无脑操作了</span><br></pre></td></tr></table></figure>
+
+<p>​        <strong>6.提示– the VMware team &gt;&gt; 输入reboot，重启</strong></p>
+<p>​        接着就可以直接从Windows向虚拟机内移文件了，注意需要悬停几秒才会有提示。</p>
+<h3 id="真-·-robocup-2D-simulation的环境配置"><a href="#真-·-robocup-2D-simulation的环境配置" class="headerlink" title="真 · robocup 2D simulation的环境配置"></a>真 · robocup 2D simulation的环境配置</h3><p><em>主要目的：解决Ubuntu :: Configure: Error: The QtCore Library &gt;= 4.3.0 Could Not Be Found?问题</em></p>
+<p><em>（该问题截止目前，无论国内还是国外还没有统一的解决方案，博主也是通过一个通宵的尝试找到了最简单的解决办法）</em></p>
+<p>​        <strong>1.启动start.sh文件，按照如下输入：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1 Ctrl+Alt+T(快捷键打开系统终端)</span><br><span class="line">2 chmod 777 .&#x2F;start.sh</span><br><span class="line">3 .&#x2F;start.sh</span><br></pre></td></tr></table></figure>
+
+<p>​        *<em>2.覆盖 QtCore Library（具体操作如下） *</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">1 Ctrl+Alt+T</span><br><span class="line">2 sudo apt-get install libqt4-*(下载并覆盖QtCore 4.的所有包)</span><br><span class="line">3 输入密码和一堆无脑操作</span><br><span class="line">&#x2F;&#x2F;在文件中无法正常访问libqt4的任何包，只有在系统终端中才能安装</span><br><span class="line">&#x2F;&#x2F;这一点是我再打开start.sh时发现的</span><br><span class="line">&#x2F;&#x2F;打开start.sh，其实大家会发现里面全是包的安装和确认安装的过程</span><br><span class="line">&#x2F;&#x2F;里面就有libqt4-dev</span><br><span class="line">&#x2F;&#x2F;因此，我们可以将start.sh简化，直接变成libqt4-*</span><br><span class="line">&#x2F;&#x2F;随着时间的推移，可能还会有出现5.的问题，所以我们可以直接libqt5-*</span><br></pre></td></tr></table></figure>
+
+<p>​        <strong>3.一系列相同的操作，但要注意顺序</strong></p>
+<p>​        <em>顺序 bison-3.0 &gt;&gt; rcssserver &gt;&gt; rcsslogplayer &gt;&gt; rcssmonitor（下面我会用file来代替相应的文件名，不断重复即可）</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">1 将file解压到home，并进入file</span><br><span class="line">2 右键空白处打开终端(千万别直接快捷键，否则需要cd 文件夹名，很麻烦)</span><br><span class="line">3 .&#x2F;configure	</span><br><span class="line">&#x2F;&#x2F;生成makefile文件</span><br><span class="line">4 make				</span><br><span class="line">&#x2F;&#x2F;编译</span><br><span class="line">5 sudo make install</span><br><span class="line">&#x2F;&#x2F;安装	</span><br><span class="line">6 sudo ldconfig</span><br><span class="line">&#x2F;&#x2F;类似于编译</span><br></pre></td></tr></table></figure>
+
+<p>​        <strong>4.验证环境是否配置成功</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1 Ctrl+Alt+T</span><br><span class="line">2 rcsoccersim</span><br><span class="line">&#x2F;&#x2F;出现界面即配置成功</span><br></pre></td></tr></table></figure>
+
+<p>​        到此就解决了第一步，环境配置问题！（手动撒花:cherry_blossom:）</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Learning/" rel="tag"># Learning</a>
+          </div>
+
+        
+
+
+        
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Windows下Ubuntu和robocup-2D-simulation环境配置"><span class="nav-number">1.</span> <span class="nav-text">Windows下Ubuntu和robocup 2D simulation环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#添加Ubuntu镜像到虚拟机"><span class="nav-number">1.1.</span> <span class="nav-text">添加Ubuntu镜像到虚拟机</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Ubuntu-16-04-6"><span class="nav-number">1.1.1.</span> <span class="nav-text">Ubuntu 16.04.6</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#VMware导入操作"><span class="nav-number">1.1.2.</span> <span class="nav-text">VMware导入操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#导入并安装Ubuntu"><span class="nav-number">1.1.3.</span> <span class="nav-text">导入并安装Ubuntu</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置robocup-2D-simulation环境"><span class="nav-number">1.2.</span> <span class="nav-text">配置robocup 2D simulation环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装VMware-Tools"><span class="nav-number">1.2.1.</span> <span class="nav-text">安装VMware Tools</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#真-·-robocup-2D-simulation的环境配置"><span class="nav-number">1.2.2.</span> <span class="nav-text">真 · robocup 2D simulation的环境配置</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">John Doe</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
