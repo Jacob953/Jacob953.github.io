@@ -20,18 +20,27 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="moving from the old repository">
+  <meta name="description" content="玩过VScode的小伙伴都知道，VScode是一款让人又恨又爱的编辑器 我也不出意外，失败了很多次，但还好结果是棒棒的 这篇博客将会将我的心得分享给大家">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Visual Studio Code for C++">
 <meta property="og:url" content="http://yoursite.com/2020/07/05/Visual-Studio-Code-for-C/index.html">
 <meta property="og:site_name" content="Jacob s&#39; blog">
-<meta property="og:description" content="moving from the old repository">
+<meta property="og:description" content="玩过VScode的小伙伴都知道，VScode是一款让人又恨又爱的编辑器 我也不出意外，失败了很多次，但还好结果是棒棒的 这篇博客将会将我的心得分享给大家">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/2020/07/05/Visual-Studio-Code-for-C/Ming-w64%EF%BC%881%EF%BC%89.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/05/Visual-Studio-Code-for-C/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%EF%BC%881%EF%BC%89.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/05/Visual-Studio-Code-for-C/vscode%EF%BC%881%EF%BC%89.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/05/Visual-Studio-Code-for-C/E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CVisual-Studio-Code-for-C%5Cvscode.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/05/Visual-Studio-Code-for-C/vscode%EF%BC%882%EF%BC%89.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/05/Visual-Studio-Code-for-C/vscode%EF%BC%883%EF%BC%89.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/05/Visual-Studio-Code-for-C/vscode%EF%BC%884%EF%BC%89.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/05/Visual-Studio-Code-for-C/vscode%EF%BC%885%EF%BC%89.png">
 <meta property="article:published_time" content="2020-07-04T16:16:09.000Z">
-<meta property="article:modified_time" content="2020-07-04T16:20:48.943Z">
+<meta property="article:modified_time" content="2020-07-06T13:05:35.966Z">
 <meta property="article:author" content="Jacob953">
 <meta property="article:tag" content="Learning">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/07/05/Visual-Studio-Code-for-C/Ming-w64%EF%BC%881%EF%BC%89.png">
 
 <link rel="canonical" href="http://yoursite.com/2020/07/05/Visual-Studio-Code-for-C/">
 
@@ -173,10 +182,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-07-05 00:16:09 / Modified: 00:20:48" itemprop="dateCreated datePublished" datetime="2020-07-05T00:16:09+08:00">2020-07-05</time>
+              <time title="Created: 2020-07-05 00:16:09" itemprop="dateCreated datePublished" datetime="2020-07-05T00:16:09+08:00">2020-07-05</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-07-06 21:05:35" itemprop="dateModified" datetime="2020-07-06T21:05:35+08:00">2020-07-06</time>
+              </span>
 
           
 
@@ -189,8 +204,69 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>moving from the old repository</p>
+        <p>玩过VScode的小伙伴都知道，VScode是一款让人又恨又爱的编辑器</p>
+<p>我也不出意外，失败了很多次，但还好结果是棒棒的</p>
+<p>这篇博客将会将我的心得分享给大家</p>
 <a id="more"></a>
+
+<p><em>前提条件：</em></p>
+<p>​        <em>1.Visual Studio Code 1.46.1.0</em></p>
+<p>​        <em>2.MinGW</em></p>
+<h1 id="Windows系统下，VScode下载和配置C-环境"><a href="#Windows系统下，VScode下载和配置C-环境" class="headerlink" title="Windows系统下，VScode下载和配置C++环境"></a>Windows系统下，VScode下载和配置C++环境</h1><h2 id="下载VScode的注意事项"><a href="#下载VScode的注意事项" class="headerlink" title="下载VScode的注意事项"></a>下载VScode的注意事项</h2><p>​        VScode只需要去官网下载即可，下载技巧将会稍后更新。</p>
+<h2 id="下载MinGW的注意事项"><a href="#下载MinGW的注意事项" class="headerlink" title="下载MinGW的注意事项"></a>下载MinGW的注意事项</h2><p><strong>选择Ming-w64的原因：</strong></p>
+<p>​        目前关于配置VSCode配置环境比较常用的工具链有WinGW、WinGW-w64和TDM-GCC</p>
+<p>​        但据说目前在Windows下调试仅支持Cygwin和 MinGW，于是我们先排除掉TDM-GCC(尽管TDM-GCC是最新的稳定版本的gcc工具集:dog:)</p>
+<p>​       至于<code>Cygwin</code>，这是一个将<code>Linux</code>应用到<code>Windows</code>下的模拟<code>Posix</code>系统，而<code>MinGW</code>是用于开发<code>Windows</code>应用的开发环境，实际上，两者都提供了部分<code>Linux</code>的应用</p>
+<p>​       最后，我们将选择WinGW-w64，WinGW和WinGW-w64实际上不是同一个工具链，WinGW又称mingw32，MinGW-w64最初的确是MinGW的一个分支而诞生，但现在已经独立发展，这就不用多说了吧</p>
+<p><strong>下载MinGW的注意事项</strong></p>
+<p>​        1.为了避免小白掉坑，这里直接传送门：</p>
+<center>https://sourceforge.net/projects/mingw-w64/files/</center>
+
+<p>​        2.选择适合本机的版本</p>
+<p>​        <em>进入传送门后，<strong>切忌直接点击<code>Download Lastest Version</code></strong>（因为我们还没有选择具体的版本），一直向下滑，我们可以看到很多链接，选择对应的版本即可。</em></p>
+<p>​        <em>如上文所说posix适用于Linux，因此选择win32，同时，sjlj相对<code>seh</code>是一种更加古老的版本，win64适配性能更好的seh，当然，如果是win32，亲，这边建议您选择dwarf，它的性能比sjlj更适用且只能用于win32</em></p>
+<p><img src="/2020/07/05/Visual-Studio-Code-for-C/Ming-w64%EF%BC%881%EF%BC%89.png" alt="Ming-w64（1）"></p>
+<p>​       <em>下载好Mingw-w64 &gt;&gt; 我们直接解压就行 &gt;&gt; 但需要记得解压的位置:joy:</em></p>
+<p>​        <em>进入解压后的文件夹，里面有个<code>bin</code>的文件夹，进去就会发现有很多编译器，我们后面将会调用，一级棒:+1:</em></p>
+<h2 id="添加系统变量"><a href="#添加系统变量" class="headerlink" title="添加系统变量"></a>添加系统变量</h2><p>​        1.右键 <em>此电脑</em> ，选择 <em>属性</em> </p>
+<p>​        2.选择 <em>环境变量（N）…</em></p>
+<p>​        3.选择系统变量的 <em>新建</em></p>
+<p>​        4.选择 <em>mingw64</em> 下的 <em>bin</em> 文件夹</p>
+<center>D:\Complier\VSCode\mingw64\bin</center>
+
+<p>​        <strong>5.一定要记得<code>确认</code>退出</strong></p>
+<p><img src="/2020/07/05/Visual-Studio-Code-for-C/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%EF%BC%881%EF%BC%89.png" alt="环境变量（1）"></p>
+<h2 id="配置-VScode下的C-环境"><a href="#配置-VScode下的C-环境" class="headerlink" title="配置 VScode下的C++环境"></a>配置 VScode下的C++环境</h2><p><em>注意事项：</em></p>
+<p>​        <em>1.不管更改任何文件，确认无误后一定要记得保存</em></p>
+<p>​        <em>2.配置环境是以本机为基础的，切忌直接复制粘贴，需要修改的内容我会一一具体指出</em></p>
+<h3 id="一、下载c-插件"><a href="#一、下载c-插件" class="headerlink" title="一、下载c++插件"></a>一、下载c++插件</h3><p>​        在扩展里输入c++，一般来说第一个就是</p>
+<p><img src="/2020/07/05/Visual-Studio-Code-for-C/vscode%EF%BC%881%EF%BC%89.png" alt="vscode（1）"></p>
+<h3 id="（自己的常用插件，后续慢慢更新）"><a href="#（自己的常用插件，后续慢慢更新）" class="headerlink" title="（自己的常用插件，后续慢慢更新）"></a>（自己的常用插件，后续慢慢更新）</h3><p>​        其他四个是我正在使用哦个的插件，第二个是主题，第三个是区块上色（和<code>codeblocks</code>很像，这也是我以前比较喜欢的编译器），第五个是汉化，大家都懂吧:dog:</p>
+<p><img src="/2020/07/05/Visual-Studio-Code-for-C/E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CVisual-Studio-Code-for-C%5Cvscode.png" alt="image-20200706203804046"></p>
+<h3 id="真-·-VScode下-环境配置"><a href="#真-·-VScode下-环境配置" class="headerlink" title="真 · VScode下++环境配置"></a>真 · VScode下++环境配置</h3><p>​        1.我们先在本地建立一个测试<strong>文件夹</strong> &gt;&gt; <strong>在VSCode中</strong>打开 &gt;&gt; 新建一个测试文件</p>
+<p><img src="/2020/07/05/Visual-Studio-Code-for-C/vscode%EF%BC%882%EF%BC%89.png" alt="vscode（2）"></p>
+<p>​        <em>右上角第一个就是建立一个<code>text.cpp</code>，注意添加后缀</em></p>
+<p>​        2.接着再来一段最经典的<code>Hello World</code></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"Hello World"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>​        2.保存 &gt;&gt; 按<code>F5</code>进行编译 &gt;&gt; 选择第一个（GDB） &gt;&gt; 配置launch.json</p>
+<p><img src="/2020/07/05/Visual-Studio-Code-for-C/vscode%EF%BC%883%EF%BC%89.png" alt="vscode（3）"></p>
+<h4 id="配置-launch-json"><a href="#配置-launch-json" class="headerlink" title="配置 launch.json"></a>配置 launch.json</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 使用 IntelliSense 了解相关属性。 </span></span><br><span class="line">    <span class="comment">// 悬停以查看现有属性的描述。</span></span><br><span class="line">    <span class="comment">// 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387</span></span><br><span class="line">    <span class="string">"version"</span>: <span class="string">"0.2.0"</span>,  </span><br><span class="line">    <span class="string">"configurations"</span>: [  </span><br><span class="line">        &#123;  </span><br><span class="line">            <span class="string">"name"</span>: <span class="string">"(gdb) Launch"</span>, <span class="comment">// 配置名称，将会在启动配置的下拉菜单中显示  </span></span><br><span class="line">            <span class="string">"type"</span>: <span class="string">"cppdbg"</span>,       <span class="comment">// 配置类型，这里只能为cppdbg  </span></span><br><span class="line">            <span class="string">"request"</span>: <span class="string">"launch"</span>,    <span class="comment">// 请求配置类型，可以为launch（启动）或attach（附加）  </span></span><br><span class="line">            <span class="string">"program"</span>: <span class="string">"$&#123;workspaceFolder&#125;/$&#123;fileBasenameNoExtension&#125;.exe"</span>,<span class="comment">// 将要进行调试的程序的路径  </span></span><br><span class="line">            <span class="string">"args"</span>: [],             <span class="comment">// 程序调试时传递给程序的命令行参数，一般设为空即可  </span></span><br><span class="line">            <span class="string">"stopAtEntry"</span>: <span class="literal">false</span>,   <span class="comment">// 设为true时程序将暂停在程序入口处，一般设置为false  </span></span><br><span class="line">            <span class="string">"cwd"</span>: <span class="string">"$&#123;workspaceFolder&#125;"</span>, <span class="comment">// 调试程序时的工作目录，一般为$&#123;workspaceFolder&#125;即代码所在目录  </span></span><br><span class="line">            <span class="string">"environment"</span>: [],  </span><br><span class="line">            <span class="string">"externalConsole"</span>: <span class="literal">true</span>, <span class="comment">// 调试时是否显示控制台窗口，一般设置为true显示控制台  </span></span><br><span class="line">            <span class="string">"MIMode"</span>: <span class="string">"gdb"</span>,  </span><br><span class="line">            <span class="string">"miDebuggerPath"</span>: <span class="string">"D:\\Complier\\VSCode\\mingw64\\bin\\gdb.exe"</span>, <span class="comment">// miDebugger的路径，注意这里要与MinGw的路径对应  </span></span><br><span class="line">            <span class="string">"preLaunchTask"</span>: <span class="string">"g++"</span>, <span class="comment">// 调试会话开始前执行的任务，一般为编译程序，c++为g++, c为gcc  </span></span><br><span class="line">            <span class="string">"setupCommands"</span>: [  </span><br><span class="line">                &#123;   </span><br><span class="line">		    <span class="string">"description"</span>: <span class="string">"Enable pretty-printing for gdb"</span>,  </span><br><span class="line">                    <span class="string">"text"</span>: <span class="string">"-enable-pretty-printing"</span>,  </span><br><span class="line">                    <span class="string">"ignoreFailures"</span>: <span class="literal">false</span>  </span><br><span class="line">                &#125;  </span><br><span class="line">            ]  </span><br><span class="line">        &#125;  </span><br><span class="line">    ] </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>​        1.复制我的代码覆盖一下源码，需要注意的是</p>
+<center>"miDebuggerPath": "D:\\Complier\\VSCode\\mingw64\\bin\\gdb.exe"</center>
+
+<p>​        <em>选择的是编译器的路径，因此需要对应到本机的编译器上</em></p>
+<p>​        2.保存 &gt;&gt; 按<code>F5</code>编译 &gt;&gt; 选择配置任务 &gt;&gt; 适用模板创建tasks.json文件 &gt;&gt; <code>MSBuild</code> &gt;&gt; 配置tasks.json</p>
+<p><img src="/2020/07/05/Visual-Studio-Code-for-C/vscode%EF%BC%884%EF%BC%89.png" alt="vscode（4）"></p>
+<h4 id="配置-tasks-json"><a href="#配置-tasks-json" class="headerlink" title="配置 tasks.json"></a>配置 tasks.json</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="comment">// See https://go.microsoft.com/fwlink/?LinkId=733558</span></span><br><span class="line">    <span class="comment">// for the documentation about the tasks.json format</span></span><br><span class="line">    <span class="string">"version"</span>: <span class="string">"2.0.0"</span>,</span><br><span class="line">    <span class="string">"tasks"</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">"type"</span>: <span class="string">"shell"</span>,</span><br><span class="line">            <span class="string">"label"</span>: <span class="string">"g++"</span>, </span><br><span class="line">            <span class="string">"command"</span>: <span class="string">"D:\\Complier\\VSCode\\mingw64\\bin\\g++.exe"</span>,</span><br><span class="line">            <span class="string">"args"</span>: [</span><br><span class="line">                <span class="string">"-g"</span>,</span><br><span class="line">                <span class="string">"$&#123;file&#125;"</span>,</span><br><span class="line">                <span class="string">"-o"</span>,</span><br><span class="line">                <span class="string">"$&#123;fileDirname&#125;\\$&#123;fileBasenameNoExtension&#125;.exe"</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="string">"options"</span>: &#123;</span><br><span class="line">                <span class="string">"cwd"</span>: <span class="string">"D:\\Complier\\VSCode\\mingw64\\bin"</span></span><br><span class="line">            &#125;,</span><br><span class="line">            <span class="string">"problemMatcher"</span>: [</span><br><span class="line">                <span class="string">"$gcc"</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>​        1.对比<code>配置 launch.json</code>将路径更改到与本机对应起来，同时，要注意：</p>
+<center>"preLaunchTask": "g++"`和` "label": "g++" `的内容要完全一致</center>
+
+<p>​        2.保存 &gt;&gt; 回我们的<code>text.cpp</code> &gt;&gt; <code>F5</code> &gt;&gt; 奇迹就出现啦:smile:</p>
+<p><img src="/2020/07/05/Visual-Studio-Code-for-C/vscode%EF%BC%885%EF%BC%89.png" alt="vscode（5）"></p>
+
     </div>
 
     
@@ -270,6 +346,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Windows系统下，VScode下载和配置C-环境"><span class="nav-number">1.</span> <span class="nav-text">Windows系统下，VScode下载和配置C++环境</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#下载VScode的注意事项"><span class="nav-number">1.1.</span> <span class="nav-text">下载VScode的注意事项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下载MinGW的注意事项"><span class="nav-number">1.2.</span> <span class="nav-text">下载MinGW的注意事项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加系统变量"><span class="nav-number">1.3.</span> <span class="nav-text">添加系统变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-VScode下的C-环境"><span class="nav-number">1.4.</span> <span class="nav-text">配置 VScode下的C++环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、下载c-插件"><span class="nav-number">1.4.1.</span> <span class="nav-text">一、下载c++插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（自己的常用插件，后续慢慢更新）"><span class="nav-number">1.4.2.</span> <span class="nav-text">（自己的常用插件，后续慢慢更新）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#真-·-VScode下-环境配置"><span class="nav-number">1.4.3.</span> <span class="nav-text">真 · VScode下++环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#配置-launch-json"><span class="nav-number">1.4.3.1.</span> <span class="nav-text">配置 launch.json</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置-tasks-json"><span class="nav-number">1.4.3.2.</span> <span class="nav-text">配置 tasks.json</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
