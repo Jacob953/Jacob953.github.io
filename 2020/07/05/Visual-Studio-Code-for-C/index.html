@@ -36,7 +36,7 @@
 <meta property="og:image" content="http://yoursite.com/2020/07/05/Visual-Studio-Code-for-C/vscode%EF%BC%884%EF%BC%89.png">
 <meta property="og:image" content="http://yoursite.com/2020/07/05/Visual-Studio-Code-for-C/vscode%EF%BC%885%EF%BC%89.png">
 <meta property="article:published_time" content="2020-07-04T16:16:09.000Z">
-<meta property="article:modified_time" content="2020-07-07T05:42:42.848Z">
+<meta property="article:modified_time" content="2020-07-20T01:55:31.858Z">
 <meta property="article:author" content="Jacob953">
 <meta property="article:tag" content="Learning">
 <meta name="twitter:card" content="summary">
@@ -190,7 +190,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-07-07 13:42:42" itemprop="dateModified" datetime="2020-07-07T13:42:42+08:00">2020-07-07</time>
+                <time title="Modified: 2020-07-20 09:55:31" itemprop="dateModified" datetime="2020-07-20T09:55:31+08:00">2020-07-20</time>
               </span>
 
           
@@ -213,28 +213,27 @@
 <p>​        <em>1.Visual Studio Code 1.46.1.0</em></p>
 <p>​        <em>2.MinGW</em></p>
 <h1 id="Windows系统下，VScode下载和配置C-环境"><a href="#Windows系统下，VScode下载和配置C-环境" class="headerlink" title="Windows系统下，VScode下载和配置C++环境"></a>Windows系统下，VScode下载和配置C++环境</h1><h2 id="下载VScode的注意事项"><a href="#下载VScode的注意事项" class="headerlink" title="下载VScode的注意事项"></a>下载VScode的注意事项</h2><p>​        VScode只需要去官网下载即可，下载技巧将会稍后更新。</p>
-<h2 id="下载MinGW的注意事项"><a href="#下载MinGW的注意事项" class="headerlink" title="下载MinGW的注意事项"></a>下载MinGW的注意事项</h2><p><strong>选择Ming-w64的原因：</strong></p>
-<p>​        目前关于配置VSCode配置环境比较常用的工具链有WinGW、WinGW-w64和TDM-GCC</p>
+<h2 id="下载MinGW的注意事项"><a href="#下载MinGW的注意事项" class="headerlink" title="下载MinGW的注意事项"></a>下载MinGW的注意事项</h2><h3 id="选择Ming-w64的原因："><a href="#选择Ming-w64的原因：" class="headerlink" title="选择Ming-w64的原因："></a><strong>选择Ming-w64的原因：</strong></h3><p>​        目前关于配置VSCode配置环境比较常用的工具链有WinGW、WinGW-w64和TDM-GCC</p>
 <p>​        但据说目前在Windows下调试仅支持Cygwin和 MinGW，于是我们先排除掉TDM-GCC(尽管TDM-GCC是最新的稳定版本的gcc工具集:dog:)</p>
 <p>​       至于Cygwin，这是一个将Linux应用到Windows下的模拟Posix系统，而MinGW是用于开发Windows应用的开发环境，实际上，两者都提供了部分Linux的应用</p>
 <p>​       最后，我们将选择WinGW-w64，WinGW和WinGW-w64实际上不是同一个工具链，WinGW又称mingw32，MinGW-w64最初的确是MinGW的一个分支而诞生，但现在已经独立发展，这就不用多说了吧</p>
-<p><strong>下载MinGW的注意事项</strong></p>
-<p>​        1.为了避免小白掉坑，这里直接传送门：</p>
+<h3 id="下载Ming-w64的注意事项"><a href="#下载Ming-w64的注意事项" class="headerlink" title="下载Ming-w64的注意事项"></a><strong>下载Ming-w64的注意事项</strong></h3><p>​        1.为了避免小白掉坑，这里直接传送门：</p>
 <center>https://sourceforge.net/projects/mingw-w64/files/</center>
 
 <p>​        2.选择适合本机的版本</p>
-<p>​        <em>进入传送门后，<strong>切忌直接点击<code>Download Lastest Version</code></strong>（因为我们还没有选择具体的版本），一直向下滑，我们可以看到很多链接，选择对应的版本即可。</em></p>
-<p>​        <em>如上文所说posix适用于Linux，因此选择win32，同时，sjlj相对<code>seh</code>是一种更加古老的版本，win64适配性能更好的seh，当然，如果是win32，亲，这边建议您选择dwarf，它的性能比sjlj更适用且只能用于win32</em></p>
+<p>​        进入传送门后，<strong>切忌直接点击<code>Download Lastest Version</code></strong>（因为我们还没有选择具体的版本），一直向下滑，我们可以看到很多链接，选择对应的版本即可。</p>
+<p>​        如上文所说posix适用于Linux，因此选择win32，同时，sjlj相对<code>seh</code>是一种更加古老的版本，win64适配性能更好的seh，当然，如果是win32，亲，这边建议您选择dwarf，它的性能比sjlj更适用且只能用于win32</p>
 <p><img src="/2020/07/05/Visual-Studio-Code-for-C/Ming-w64%EF%BC%881%EF%BC%89.png" alt="Ming-w64（1）"></p>
-<p>​       <em>下载好Mingw-w64 &gt;&gt; 我们直接解压就行 &gt;&gt; 但需要记得解压的位置:joy:</em></p>
-<p>​        <em>进入解压后的文件夹，里面有个<code>bin</code>的文件夹，进去就会发现有很多编译器，我们后面将会调用，一级棒:+1:</em></p>
-<h2 id="添加系统变量"><a href="#添加系统变量" class="headerlink" title="添加系统变量"></a>添加系统变量</h2><p>​        1.右键 <em>此电脑</em> ，选择 <em>属性</em> </p>
-<p>​        2.选择 <em>环境变量（N）…</em></p>
-<p>​        3.选择系统变量的 <em>新建</em></p>
-<p>​        4.选择 <em>mingw64</em> 下的 <em>bin</em> 文件夹</p>
+<p>​       下载好Mingw-w64 &gt;&gt; 我们直接解压就行 </p>
+<p>​        <em>但需要记得解压的位置</em>:joy:</p>
+<p>​        <em>进入解压后的文件夹，里面有个<code>bin</code>的文件夹，进去就会发现有很多编译器，我们后面将会调用，一级棒​</em>:+1:</p>
+<h2 id="添加系统变量"><a href="#添加系统变量" class="headerlink" title="添加系统变量"></a>添加系统变量</h2><p>​        1.右键 <strong>此电脑</strong> ，选择 <strong>属性</strong> </p>
+<p>​        2.选择 <strong>环境变量（N）…</strong></p>
+<p>​        3.选择系统变量的 <strong>新建</strong></p>
+<p>​        4.选择 <strong>mingw64</strong> 下的 <strong>bin</strong> 文件夹（配置环境应该找到本机对应的地址，切忌直接用我的地址，除非我俩的路径一摸一样）</p>
 <center>D:\Complier\VSCode\mingw64\bin</center>
 
-<p>​        <strong>5.一定要记得 <em>确认</em> 退出</strong></p>
+<p>​        5.一定要记得 <strong>确认</strong> 退出</p>
 <p><img src="/2020/07/05/Visual-Studio-Code-for-C/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%EF%BC%881%EF%BC%89.png" alt="环境变量（1）"></p>
 <h2 id="配置-VScode下的C-环境"><a href="#配置-VScode下的C-环境" class="headerlink" title="配置 VScode下的C++环境"></a>配置 VScode下的C++环境</h2><p><em>注意事项：</em></p>
 <p>​        <em>1.不管更改任何文件，确认无误后一定要记得保存</em></p>
@@ -245,7 +244,7 @@
 <p><img src="/2020/07/05/Visual-Studio-Code-for-C/E:%5CJacob_blog%5Cmyblog%5Csource_posts%5CVisual-Studio-Code-for-C%5Cvscode.png" alt="image-20200706203804046"></p>
 <h3 id="真-·-VScode下-环境配置"><a href="#真-·-VScode下-环境配置" class="headerlink" title="真 · VScode下++环境配置"></a>真 · VScode下++环境配置</h3><p>​        1.我们先在本地建立一个测试<strong>文件夹</strong> &gt;&gt; <strong>在VSCode中</strong>打开 &gt;&gt; 新建一个测试文件</p>
 <p><img src="/2020/07/05/Visual-Studio-Code-for-C/vscode%EF%BC%882%EF%BC%89.png" alt="vscode（2）"></p>
-<p>​        <em>右上角第一个就是建立一个<code>text.cpp</code>，注意添加后缀</em></p>
+<p>​        <em>右上角第一个就是建立一个<code>text.cpp</code>，注意添加后缀cpp</em></p>
 <p>​        2.接着再来一段最经典的<code>Hello World</code></p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"Hello World"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -266,6 +265,7 @@
 
 <p>​        2.保存 &gt;&gt; 回我们的<code>text.cpp</code> &gt;&gt; <code>F5</code> &gt;&gt; 奇迹就出现啦:smile:</p>
 <p><img src="/2020/07/05/Visual-Studio-Code-for-C/vscode%EF%BC%885%EF%BC%89.png" alt="vscode（5）"></p>
+<p>如果有什么没有说清的敌方可以私聊一下博主，毕竟博主只是个大一菜鸡嘤嘤嘤:cry:</p>
 
     </div>
 
@@ -284,13 +284,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/07/04/Robocup-2D-Simulation-Learning-Record/" rel="prev" title="Robocup 2D Simulation Learning Record">
-      <i class="fa fa-chevron-left"></i> Robocup 2D Simulation Learning Record
+    <a href="/2020/07/04/Robocup-2D-Simulation-Learning-Record/" rel="prev" title="The Competition of Robocup 2D Simulation">
+      <i class="fa fa-chevron-left"></i> The Competition of Robocup 2D Simulation
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/07/07/Basic-Learning-Record-of-Java/" rel="next" title="Basic Learning Record of Java">
-      Basic Learning Record of Java <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -349,7 +346,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Windows系统下，VScode下载和配置C-环境"><span class="nav-number">1.</span> <span class="nav-text">Windows系统下，VScode下载和配置C++环境</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#下载VScode的注意事项"><span class="nav-number">1.1.</span> <span class="nav-text">下载VScode的注意事项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下载MinGW的注意事项"><span class="nav-number">1.2.</span> <span class="nav-text">下载MinGW的注意事项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加系统变量"><span class="nav-number">1.3.</span> <span class="nav-text">添加系统变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-VScode下的C-环境"><span class="nav-number">1.4.</span> <span class="nav-text">配置 VScode下的C++环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、下载c-插件"><span class="nav-number">1.4.1.</span> <span class="nav-text">一、下载c++插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（自己的常用插件，后续慢慢更新）"><span class="nav-number">1.4.2.</span> <span class="nav-text">（自己的常用插件，后续慢慢更新）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#真-·-VScode下-环境配置"><span class="nav-number">1.4.3.</span> <span class="nav-text">真 · VScode下++环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#配置-launch-json"><span class="nav-number">1.4.3.1.</span> <span class="nav-text">配置 launch.json</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置-tasks-json"><span class="nav-number">1.4.3.2.</span> <span class="nav-text">配置 tasks.json</span></a></li></ol></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Windows系统下，VScode下载和配置C-环境"><span class="nav-number">1.</span> <span class="nav-text">Windows系统下，VScode下载和配置C++环境</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#下载VScode的注意事项"><span class="nav-number">1.1.</span> <span class="nav-text">下载VScode的注意事项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下载MinGW的注意事项"><span class="nav-number">1.2.</span> <span class="nav-text">下载MinGW的注意事项</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#选择Ming-w64的原因："><span class="nav-number">1.2.1.</span> <span class="nav-text">选择Ming-w64的原因：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下载Ming-w64的注意事项"><span class="nav-number">1.2.2.</span> <span class="nav-text">下载Ming-w64的注意事项</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加系统变量"><span class="nav-number">1.3.</span> <span class="nav-text">添加系统变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-VScode下的C-环境"><span class="nav-number">1.4.</span> <span class="nav-text">配置 VScode下的C++环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、下载c-插件"><span class="nav-number">1.4.1.</span> <span class="nav-text">一、下载c++插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（自己的常用插件，后续慢慢更新）"><span class="nav-number">1.4.2.</span> <span class="nav-text">（自己的常用插件，后续慢慢更新）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#真-·-VScode下-环境配置"><span class="nav-number">1.4.3.</span> <span class="nav-text">真 · VScode下++环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#配置-launch-json"><span class="nav-number">1.4.3.1.</span> <span class="nav-text">配置 launch.json</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置-tasks-json"><span class="nav-number">1.4.3.2.</span> <span class="nav-text">配置 tasks.json</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -363,7 +360,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
