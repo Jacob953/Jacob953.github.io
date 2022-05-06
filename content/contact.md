@@ -15,9 +15,3 @@ title = "Contact"
 > P.R. China
 
 ---
-
-## Social
-
-1. [Facebook](#)
-2. [Twitter](#)
-3. [Google+](#)
