@@ -19,7 +19,7 @@ Instrument: piano
 
 ## LINKS
 
-[Chronology](https://github.com/Jacob953/chronology) · [GitHub](https://github.com/Jacob953) · Vorlesungen
+[Chronology](https://jacob953.github.io/chronology/) · [GitHub](https://github.com/Jacob953) · Vorlesungen
 
 ## STUDIOS
 
