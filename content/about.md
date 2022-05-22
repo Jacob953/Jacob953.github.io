@@ -39,7 +39,7 @@ See Online Portfolio
 
 ## CV
 
-[PDF version](/cv-cn.pdf)
+[PDF version](/cv-en.pdf)
 
 ## CURRENTLY DOING
 

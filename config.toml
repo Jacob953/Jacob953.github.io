@@ -36,7 +36,7 @@ publishDir = "docs"
     weight = 1
   [[menu.main]]
     name = "Resume"
-    url = "/cv-cn.pdf"
+    url = "/cv-en.pdf"
     # 'pre' and 'post' hooks are available
     # here we use an icon from Bootstrap https://icons.getbootstrap.com/
     weight = 2
