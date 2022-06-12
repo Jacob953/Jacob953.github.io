@@ -37,6 +37,8 @@ ZunYi Nanbai Senior High School<sup>2016.9-2019.6</sup>
 
 See Online Portfolio
 
+[Darker Corners of Go](https://jacob953.com/darker-corners-of-go/)
+
 ## CV
 
 [PDF version](/cv-en.pdf)
