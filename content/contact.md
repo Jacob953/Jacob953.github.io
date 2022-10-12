@@ -2,7 +2,7 @@
 title = "Contact"
 +++
 
-- Email: [jacob953@csu.edu.cn](mailto:jacob953@csu.edu.cn)
+- Email: [i@jacob953.com](mailto:i@jacob953.com)
 
 ---
 
