@@ -23,11 +23,11 @@ Instrument: piano
 
 ## STUDIOS
 
-EvalCSU<sup>Since 2022.2</sup>
-
 Apple Lab<sup>Since 2020.10</sup>
 
 ## JOURNEYS
+
+2012 Laboratories at Huawei<sup>2022.7-2022.11</sup>
 
 Central South University<sup>2019.9-expected 2023.6</sup>
 
