@@ -1,42 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>About on Hi HERE! NICE TO MEET YOU~</title>
+    <title>JACO GARDEN</title>
     <link>https://jacob953.com/</link>
-    <description>Recent content in About on Hi HERE! NICE TO MEET YOU~</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://jacob953.com/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>https://jacob953.com/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jacob953.com/about/</guid>
-      <description>ABOUT ME  I&amp;rsquo;m Junfeng Yu(a.k.a Jacob953), an authentic Chinese from Guizhou province. Born at 01, I now do some code stuff.
-HANDY STUFF Code: Golang, Java, C++
-Sports: table tennis
-Instrument: piano
-LINKS Chronology · GitHub · Vorlesungen
-STUDIOS EvalCSUSince 2022.2
-Apple LabSince 2020.10
-JOURNEYS Central South University2019.9-expected 2023.6
-ZunYi Nanbai Senior High School2016.9-2019.6
-WORKS See Online Portfolio
-Darker Corners of Go
-CV PDF version
-CURRENTLY DOING Weight loss to 60 kg 🏃🏻</description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>https://jacob953.com/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jacob953.com/contact/</guid>
-      <description> Email: jacob953@csu.edu.cn   Mailing Address  Shenghua Students Apartment, Central South University, No.932, South Lushan Road
-Changsha City, Hunan Province
-P.R. China
-  </description>
-    </item>
-    
+    <description>Recent content on JACO GARDEN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>i@jacob953.com (Jacob953)</managingEditor>
+    <webMaster>i@jacob953.com (Jacob953)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0  International License.</copyright><atom:link href="https://jacob953.com/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
