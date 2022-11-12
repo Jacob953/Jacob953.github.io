@@ -1,0 +1,56 @@
+baseURL = 'http =//example.org/'
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0  International License."
+languageCode = "en-us"
+title = "JACO GARDEN"
+theme = "hugo-three4th"
+
+[author]
+  name = "Jacob953"
+  email = "i@jacob953.com"
+  role = "Day-dreamer, open-source ethusastic and currently working at Huawei"
+  intro = "makes funny things"
+
+[params] 
+  subscribe = true
+  [[params.link]]
+    name = "github"
+    url = "https =//github.com/Jacob953"
+  [[params.link]]
+    name = "linkedin"
+    url = "https =//www.linkedin.com/in/junfeng-yu-578456248/"
+
+[menu]
+  [[menu.main]]
+    name = "Garden"
+    url = "/"
+    weight = 1
+    post = "caret-down"
+  [[menu.main]]
+    name = "Essays"
+    url = "/essays"
+    parent = "Garden"
+    weight = 1
+  [[menu.main]]
+    name = "Notes"
+    url = "/notes"
+    parent = "Garden"
+    weight = 2
+  [[menu.main]]
+    name = "Lanes"
+    url = "/lanes"
+    parent = "Garden"
+    weight = "3"
+  [[menu.main]]
+    name = "Library"
+    url = "/library"
+    parent = "Garden"
+    weight = 4
+  [[menu.main]]
+    name = "Cassette"
+    url = "/cassette"
+    weight = 2
+  [[menu.main]]
+    name = "Wiki"
+    url = "https =//github.com/Jacob953/hugo-three4th/wiki"
+    weight = 3
+    post = "link"
