@@ -23,7 +23,6 @@ publishDir = "docs"
 [menu]
   [[menu.main]]
     name = "Garden"
-    url = ""
     weight = 1
   #   post = "caret-down"
   # [[menu.main]]
