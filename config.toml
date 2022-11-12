@@ -8,8 +8,8 @@ publishDir = "docs"
 [author]
   name = "Jacob953"
   email = "i@jacob953.com"
-  role = "Day-dreamer, open-source ethusastic and currently working at Huawei"
-  intro = "makes funny things"
+  role = "Daydreamer by nature, Enthusiast of open-source, Curiosity-driven youngster and Night owl"
+  intro = "is ascending the mountain crest which dwarfs all peaks under his feet"
 
 [params] 
   subscribe = true
@@ -26,32 +26,32 @@ publishDir = "docs"
     url = "/"
     weight = 1
     post = "caret-down"
+  # [[menu.main]]
+  #   name = "Essays"
+  #   url = "/essays"
+  #   parent = "Garden"
+  #   weight = 1
+  # [[menu.main]]
+  #   name = "Notes"
+  #   url = "/notes"
+  #   parent = "Garden"
+  #   weight = 2
+  # [[menu.main]]
+  #   name = "Lanes"
+  #   url = "/lanes"
+  #   parent = "Garden"
+  #   weight = "3"
+  # [[menu.main]]
+  #   name = "Library"
+  #   url = "/library"
+  #   parent = "Garden"
+  #   weight = 4
+  # [[menu.main]]
+  #   name = "Cassette"
+  #   url = "/cassette"
+  #   weight = 2
   [[menu.main]]
-    name = "Essays"
-    url = "/essays"
-    parent = "Garden"
-    weight = 1
-  [[menu.main]]
-    name = "Notes"
-    url = "/notes"
-    parent = "Garden"
-    weight = 2
-  [[menu.main]]
-    name = "Lanes"
-    url = "/lanes"
-    parent = "Garden"
-    weight = "3"
-  [[menu.main]]
-    name = "Library"
-    url = "/library"
-    parent = "Garden"
-    weight = 4
-  [[menu.main]]
-    name = "Cassette"
-    url = "/cassette"
-    weight = 2
-  [[menu.main]]
-    name = "Wiki"
-    url = "https =//github.com/Jacob953/hugo-three4th/wiki"
+    name = "Resume"
+    url = "https://github.com/Jacob953/resume/blob/main/PDF/RESUME_WORK_EN.pdf"
     weight = 3
     post = "link"
