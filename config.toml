@@ -1,4 +1,4 @@
-baseURL = "jacob953.com"
+baseURL = "https://jacob953.com"
 copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0  International License."
 languageCode = "en-us"
 title = "JACO GARDEN"
@@ -15,15 +15,16 @@ publishDir = "docs"
   subscribe = true
   [[params.link]]
     name = "github"
-    url = "https =//github.com/Jacob953"
+    url = "https=//github.com/Jacob953"
   [[params.link]]
     name = "linkedin"
-    url = "https =//www.linkedin.com/in/junfeng-yu-578456248/"
+    url = "https=//www.linkedin.com/in/junfeng-yu-578456248/"
 
 [menu]
   [[menu.main]]
     name = "Garden"
     weight = 1
+    url = "/"
   #   post = "caret-down"
   # [[menu.main]]
   #   name = "Essays"
@@ -45,10 +46,10 @@ publishDir = "docs"
   #   url = "/library"
   #   parent = "Garden"
   #   weight = 4
-  # [[menu.main]]
-  #   name = "Cassette"
-  #   url = "/cassette"
-  #   weight = 2
+  [[menu.main]]
+    name = "Cassette"
+    url = "/cassette"
+    weight = 2
   [[menu.main]]
     name = "Resume"
     url = "https://github.com/Jacob953/resume/blob/main/PDF/RESUME_WORK_EN.pdf"
