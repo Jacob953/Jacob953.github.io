@@ -1,26 +1,7 @@
 ---
-title: "Cassette"
-disaplay: timeline
-def: An ongoing blockchain that records what I'm watching, feeling, and exploring.
+title: "Cassettte"
+display: blog
+preface: Retrospective chronological record of what I was aware, feeling, and thinking
 ---
 
-Please write your foreward here.
-
-<!----------------------ATTENTION----------------------------
-
-disaplay: entry, card, book, timeline.
-
-Please follow the specific kind of archetypes in the case of disaplay below:
-
-    case: entry, card, timeline
-        
-        `hugo new --kind post <dir>/<title>`
-        eg: hugo new --kind post essays/database
-    
-    case: book
-        
-        `hugo new --kind book <dir>/<title>`
-        eg: hugo new --kind book library/database 
-
-------------------------------------------------------------> 
-
+一条空间有限延续的单行道，驶向乐观的悲观主义世界，以我的所见、所感和所想，寻觅存在。
