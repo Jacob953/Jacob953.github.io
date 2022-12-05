@@ -1,5 +1,5 @@
 ---
-title: "22 12 06"
+title: ""
 date: 2022-12-06T02:46:21+08:00
 display: blog
 ---
