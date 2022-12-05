@@ -1,6 +1,6 @@
 ---
 title: "Three4th"
-display: note
+display: cover-with
 status: sow
 preface: 兼容 Digital Garden & Blog 的 Hugo 主题
 ---

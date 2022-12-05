@@ -1,6 +1,6 @@
 ---
 title: "Essays"
-display: note
+display: cover-with
 preface: Ephemeral, unsystematic essays that I suddenly wanted to jot down
 ---
 
