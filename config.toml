@@ -9,7 +9,7 @@ publishDir = "docs"
   name = "Jacob953"
   email = "i@jacob953.com"
   role = "Open-source Enthusiast, Curiosity-driven and Night owl"
-  intro = "is ascending the mountain crest which dwarfs all peaks under his feet"
+  intro = "have passions for programming, design, and finance"
 
 [params] 
   subscribe = true
