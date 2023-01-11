@@ -30,7 +30,12 @@ publishDir = "docs"
     name = "Essays"
     url = "/essays"
     parent = "Garden"
-    weight = 1
+    weight = 1  
+  [[menu.main]]
+    name = "Notes"
+    url = "/notes"
+    parent = "Garden"
+    weight = 2
   [[menu.main]]
     name = "Cassette"
     url = "/cassette"
