@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jacob953.com/</loc>
+    <lastmod>2023-03-23T02:16:57+08:00</lastmod>
+  </url><url>
+    <loc>https://jacob953.com/notes/</loc>
+    <lastmod>2023-03-23T02:16:57+08:00</lastmod>
+  </url><url>
+    <loc>https://jacob953.com/notes/23-3-23/</loc>
+    <lastmod>2023-03-23T02:16:57+08:00</lastmod>
+  </url><url>
     <loc>https://jacob953.com/cassette/23-3-21/</loc>
     <lastmod>2023-03-21T22:59:02+08:00</lastmod>
   </url><url>
     <loc>https://jacob953.com/cassette/</loc>
-    <lastmod>2023-03-21T22:59:02+08:00</lastmod>
-  </url><url>
-    <loc>https://jacob953.com/</loc>
     <lastmod>2023-03-21T22:59:02+08:00</lastmod>
   </url><url>
     <loc>https://jacob953.com/cassette/23-3-18/</loc>
@@ -16,9 +22,6 @@
   </url><url>
     <loc>https://jacob953.com/cassette/23-3-12/</loc>
     <lastmod>2023-03-12T21:39:25+08:00</lastmod>
-  </url><url>
-    <loc>https://jacob953.com/notes/</loc>
-    <lastmod>2023-03-11T19:52:10+08:00</lastmod>
   </url><url>
     <loc>https://jacob953.com/notes/23-3-11/</loc>
     <lastmod>2023-03-11T19:52:10+08:00</lastmod>
