@@ -8,10 +8,10 @@ display: cover-without
 
 自己感觉面试次数不多，但都是比较感兴趣的核心岗位，先记录一下大概的经历吧：
 
-- 面过了：Huawei 的 GaussDB 存储内核；
-- 面挂了，非个人原因（学校不让实习、HC 突然没了、主动拒了等）：Microsoft 的软件开发，RisingWave 的数据库内核，VMware 的虚拟化，TikTok 深圳的基础架构，Meituan 的 Hulk，StarRocks 的数据库内核；
-- 面挂了，个人原因，非技术原因（阳了等）：Baidu 的数据库内核，Alibaba 的 Lazada 用户导航
-- 面挂了，个人原因，技术原因（笔试挂了，面试不行等）：PingCAP 的数据开发，Apple 的蜂窝监控团队，Hulu 的软件开发，Tencent 的金融科技。
+- 过了：Huawei 的 GaussDB 存储内核，OSPP，GitLink，GSoC；
+- 挂了，非个人原因（学校不让实习、HC 突然没了、主动拒了等）：Microsoft 的软件开发，RisingWave 的数据库内核，VMware 的虚拟化，TikTok 深圳的基础架构，Meituan 的 Hulk，StarRocks 的数据库内核；
+- 挂了，个人原因，非技术原因（阳了等）：Baidu 的数据库内核，Alibaba 的 Lazada 用户导航
+- 挂了，个人原因，技术原因（笔试挂了，面试不行等）：PingCAP 的数据开发，Apple 的蜂窝监控团队，Hulu 的软件开发，Tencent 的金融科技。
 
 应该就这些了，也不打算挣扎了，最后去的华子的集团财经（博岩哥帮我找的 offer，内转过去的），这边给了顶薪，也碰巧撞上了 ERP 战略部门，感觉血赚。（但其实心里也没底
 
