@@ -9,7 +9,17 @@
     <managingEditor>i@jacob953.com (Jacob953)</managingEditor>
     <webMaster>i@jacob953.com (Jacob953)</webMaster>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0  International License.</copyright>
-    <lastBuildDate>Sun, 16 Apr 2023 00:15:34 +0800</lastBuildDate><atom:link href="https://jacob953.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Apr 2023 23:09:15 +0800</lastBuildDate><atom:link href="https://jacob953.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://jacob953.com/cassette/23-4-19/</link>
+      <pubDate>Wed, 19 Apr 2023 23:09:15 +0800</pubDate>
+      <author>i@jacob953.com (Jacob953)</author>
+      <guid>https://jacob953.com/cassette/23-4-19/</guid>
+      <description>奖学金到账，感觉又可以出去浪一波了。
+不过，还是先把 GSoC 的进度先拉起来吧。</description>
+    </item>
+    
     <item>
       <title></title>
       <link>https://jacob953.com/cassette/23-4-16/</link>
@@ -674,7 +684,7 @@ Apple 的面试体验让我更想加入这个大团队，希望能够顺利继�
       <author>i@jacob953.com (Jacob953)</author>
       <guid>https://jacob953.com/essays/6.5840/</guid>
       <description> 为什么要做 MIT 6.5840 MIT 6.5840 的前身其实就是 MIT 6.824，是一个很出名的分布式入门实验，难度也不低，挺值得学习的，而我选择最新的课程有 3 个原因：
-新内容比往届的更加完善，更加严谨，优化设计的同时也完善了很多 corner case 的测试； 想检验一下自己的水平，看看多久能完全搞定这个实验； 代码避嫌，很多国人（非贬义，官方说的）开源了 MIT 6.824 的代码，破坏了公平性，我不希望自己写的代码受到质疑，同时我也会遵守课程规定，不会公开自己的代码。（即使真的很想分享一下自己重构后的代码&amp;gt;_&amp;lt; Lab 1 MapReduce Lab 2 Raft Basic Lab 3 Raft KV Lab 4 Raft Shard </description>
+新内容比往届的更加完善，更加严谨，优化设计的同时也完善了很多 corner case 的测试； 想检验一下自己的水平，看看多久能完全搞定这个实验； 代码避嫌，很多国人（非贬义，官方说的）开源了 MIT 6.824 的代码，破坏了公平性，我不希望自己写的代码受到质疑，也会遵守课程规定，不会公开自己的代码。（即使真的很想分享一下自己重构后的代码&amp;gt;_&amp;lt; Lab 1 MapReduce Lab 2 Raft Basic Lab 3 Raft KV Lab 4 Raft Shard </description>
     </item>
     
     <item>
