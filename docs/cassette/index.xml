@@ -9,7 +9,20 @@
     <managingEditor>i@jacob953.com (Jacob953)</managingEditor>
     <webMaster>i@jacob953.com (Jacob953)</webMaster>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0  International License.</copyright>
-    <lastBuildDate>Sun, 30 Apr 2023 08:45:20 +0800</lastBuildDate><atom:link href="https://jacob953.com/cassette/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 May 2023 22:15:35 +0800</lastBuildDate><atom:link href="https://jacob953.com/cassette/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://jacob953.com/cassette/23-5-1/</link>
+      <pubDate>Mon, 01 May 2023 22:15:35 +0800</pubDate>
+      <author>i@jacob953.com (Jacob953)</author>
+      <guid>https://jacob953.com/cassette/23-5-1/</guid>
+      <description>下午和夜夜去长沙的荟聚约了饭，他带了一个学弟来，VR 方向的，估计会去香港读 PhD。
+回长沙睡了两天，仔细想了一下在武汉玩了啥，好像前两天打德州扑克打通宵，第三天是打 LOL 打到天明。
+晚上看夜夜去电玩城玩了一下音游，很神奇，不太理解如何发烧，嫌环境太吵，就和学弟先走了。
+回来路上简单和学弟聊了一下，聊到 Rust 时顺便聊到了 Go 的一个问题：如何看待 Google 独裁 Go 的发展方向。
+大概率知道是和谁讨论过，或者是翻垃圾桶时吃到了过期零食，Go 本来就是 Google 内部用来过渡而创造的语言，当然优先根据内部需求维护了，谁要觉得不好用，自己去造一个更好的不就行了。</description>
+    </item>
+    
     <item>
       <title></title>
       <link>https://jacob953.com/cassette/23-4-30/</link>
