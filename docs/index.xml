@@ -9,7 +9,18 @@
     <managingEditor>i@jacob953.com (Jacob953)</managingEditor>
     <webMaster>i@jacob953.com (Jacob953)</webMaster>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0  International License.</copyright>
-    <lastBuildDate>Thu, 04 May 2023 14:43:25 +0800</lastBuildDate><atom:link href="https://jacob953.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 May 2023 03:16:39 +0800</lastBuildDate><atom:link href="https://jacob953.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://jacob953.com/cassette/23-05-05/</link>
+      <pubDate>Fri, 05 May 2023 03:16:39 +0800</pubDate>
+      <author>i@jacob953.com (Jacob953)</author>
+      <guid>https://jacob953.com/cassette/23-05-05/</guid>
+      <description>晚上找胡总聊天，喝了点 43 度的茅子，聊了很多，视野瞬间开阔了很多，发现之前赌的很多东西，都是有迹可循的。
+凌晨 3 点经历了一次 GSoC 放榜，第一次看到 Google 家网站被挤爆😱
+Error: Server Error The server encountered an error and could not complete your request. Please try again in 30 seconds. </description>
+    </item>
+    
     <item>
       <title></title>
       <link>https://jacob953.com/cassette/23-05-04/</link>
@@ -742,16 +753,6 @@ Apple 的面试体验让我更想加入这个大团队，希望能够顺利继�
       <description>10 月的某天，习惯性地失眠，半夜冲浪，突然想不通何谓存在？或者说，我该如何证明我的存在？
 自知是个平凡之人，清清白白入世，不求带走什么，但想留下点什么。于是有了 —— Jacob953 的人生磁带。
 回头想想，记录自己的所知、所感和所想，也不失为一件有趣的事，好奇一年后的我会如何看待曾今的自己。</description>
-    </item>
-    
-    <item>
-      <title>MIT 6.5840</title>
-      <link>https://jacob953.com/essays/6.5840/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>i@jacob953.com (Jacob953)</author>
-      <guid>https://jacob953.com/essays/6.5840/</guid>
-      <description> 为什么要做 MIT 6.5840 MIT 6.5840 的前身其实就是 MIT 6.824，是一个很出名的分布式入门实验，难度也不低，挺值得学习的，而我选择最新的课程有 3 个原因：
-新内容比往届的更加完善，更加严谨，优化设计的同时也完善了很多 corner case 的测试； 想检验一下自己的水平，看看多久能完全搞定这个实验； 代码避嫌，很多国人（非贬义，官方说的）开源了 MIT 6.824 的代码，破坏了公平性，我不希望自己写的代码受到质疑，也会遵守课程规定，不会公开自己的代码。（即使真的很想分享一下自己重构后的代码&amp;gt;_&amp;lt; Lab 1 MapReduce Lab 2 Raft Basic Lab 3 Raft KV Lab 4 Raft Shard </description>
     </item>
     
     <item>
