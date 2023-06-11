@@ -9,7 +9,19 @@
     <managingEditor>i@jacob953.com (Jacob953)</managingEditor>
     <webMaster>i@jacob953.com (Jacob953)</webMaster>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0  International License.</copyright>
-    <lastBuildDate>Wed, 31 May 2023 22:27:30 +0800</lastBuildDate><atom:link href="https://jacob953.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Jun 2023 14:11:07 +0800</lastBuildDate><atom:link href="https://jacob953.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://jacob953.com/cassette/23-06-11/</link>
+      <pubDate>Sun, 11 Jun 2023 14:11:07 +0800</pubDate>
+      <author>i@jacob953.com (Jacob953)</author>
+      <guid>https://jacob953.com/cassette/23-06-11/</guid>
+      <description>不知道是感冒了还是复阳，床上躺了几天，吃了饭也会因为难受吐出来，总之没什么好的状态。
+自从把 MIT 6.5840 写完后就几乎就没写过比较大工程的代码了，顶多也是写了一点 Rust 的小程序。
+原本以为忙完琐事了，就可以开始写代码了，但还会有新的变化导致 ShadingSphere 和 Databend 两边都没精力去弄，而是跑去和壮壮哥组队准备开一下 TiDB Future App Hackathon 的新田。
+一直说重构 Hugo-Three4Th 也没来得及，可能最近一直在推进的就是看了一些电影和书吧，也不算太颓废。</description>
+    </item>
+    
     <item>
       <title></title>
       <link>https://jacob953.com/cassette/23-05-31/</link>
