@@ -9,7 +9,7 @@ display: blog
 八月入职前打算做的项目：
 - CMU15445 和 CMU15721，主要是为了自嗨吧，因为 MIT 6.5840 之前已经做过了，感觉 2023 后，这些项目难度都明显增加了很多，还好有佳伟可以一起讨论，效率蛮高的，基本不会卡壳；
 - Apache/ShardingSphere-on-cloud，其实这个项目的优先级应该高于 CMU 的两个课程，因为打算在入职前拿下 Committee，得把 Chaos JVM 搞定，多找立尧取取经；
-- seckill 打算用 Java 写个老生常谈的秒杀系统，因为入职后得写 Java，当作提前练练手吧；
+- SecKiller 打算用 Java 写个老生常谈的秒杀系统，因为入职后得写 Java，当作提前练练手吧；
 - TiDB Future App Hackathon，因为暂时没有特别好的想法，所以不打算急着动手，但感觉很快会有灵感，半个月内。
 
 正在看的书：
