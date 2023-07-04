@@ -64,3 +64,5 @@ preface: 兼容 Digital Garden & Blog & Diary 的 Hugo 主题
 Logo 
 
 ![PHILOSOPHY](images/PHILOSOPHY.JPG)
+
+![LOGO](images/LOGO.SVG)
