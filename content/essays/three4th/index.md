@@ -65,4 +65,4 @@ Logo
 
 ![PHILOSOPHY](images/PHILOSOPHY.JPG)
 
-![LOGO](images/LOGO.SVG)
+![STATUS](images/STATUS.SVG)
