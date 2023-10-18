@@ -9,23 +9,18 @@ TYPES=$(CASSETTE) $(ESSAYS)
 TYPES_STRING=$(wordlist 1,$(words $(TYPES)),$(TYPES))
 USAGE_STRING="Usage: make commit TYPE=[ $(TYPES_STRING) ]"
 
-.PHONY: all
-
-all: init $(TYPES)
-
-init:
+init: ## initial target folder with types
 	@$(call dir_check,content/$(CASSETTE))
-	@$(call dir_check,content/$(ESSAY))
+	@$(call dir_check,content/$(ESSAYS))
 
 $(CASSETTE):
 	@hugo new --kind post $(CASSETTE)/$(DATE)
 	@$(call modify_cassette)
 
-$(ESSAY):
+$(ESSAYS):
 	@hugo new --kind post $(ESSAYS)/$(DATE)
 
-commit:
-
+commit: ## commit to gh-page
 	file=$(TYPE)/$(DATE)
 	$(call do_commit,$(file))
 	
@@ -48,3 +43,12 @@ define modify_cassette
 	rm -rf "content/$(CASSETTE)/$(DATE)/images"
 	sed -i '' -e '2s/title:.*/title: ""/' -e '4s/display:.*/display: blog/' -e '5,7d' "content/$(CASSETTE)/$(DATE)/index.md"
 endef
+
+define date
+
+endef
+
+.DEFAULT_GOAL := help
+
+help:
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
